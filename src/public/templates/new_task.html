@@ -1,0 +1,15 @@
+<div class="row" ng-show="error">
+  <div class="alert alert-danger">Could not create the task!</div>
+</div>
+<div class="row">
+  <form>
+    <div ng-form="form">
+      <div class="input-group" ng-class="{'has-error': form.text.$invalid &amp;&amp; form.text.$dirty}">
+        <input type="text" name="text" class="form-control" placeholder="Task text" ng-model="text" required/>
+        <div class="input-group-btn">
+          <button type="submit" class="btn btn-primary" ng-click="create()" ng-disabled="form.$invalid">Create</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

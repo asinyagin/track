@@ -1,0 +1,25 @@
+{
+  "name": "track",
+  "version": "0.0.1",
+  "authors": [
+    "Alexander Sinyagin <sinyagin.alexander@gmail.com>"
+  ],
+  "description": "Simple issue tracker.",
+  "main": "run.sh",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "target/public/js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "angular": "~1.3.13",
+    "jquery": "~2.1.3",
+    "angular-route": "~1.3.13",
+    "angular-resource": "~1.3.13"
+  }
+}

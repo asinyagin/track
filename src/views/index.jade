@@ -1,0 +1,28 @@
+doctype html
+html(lang="en", ng-app="track")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="XX-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title(ng-bind="'Track :: ' + title") Track
+    link(href="/lib/bootstrap/dist/css/bootstrap.css", rel="stylesheet")
+    link(href="/css/style.css", rel="stylesheet")
+  body
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          a.navbar-brand(href="#tasks") Track
+        ul.nav.navbar-nav.navbar-right
+          li: a(href="#!/new-task") New task
+    #main.container(ng-view)
+
+    script(src="/lib/angular/angular.js")
+    script(src="/lib/angular-route/angular-route.js")
+    script(src="/lib/angular-resource/angular-resource.js")
+    script(src="/lib/angular-messages/angular-messages.js")
+    script(src="/scripts/track.js")
+    script(src="/scripts/track.router.js")
+    script(src="/scripts/tasks.ctrl.js")
+    script(src="/scripts/task.ctrl.js")
+    script(src="/scripts/new_task.ctrl.js")
+    script(src="/scripts/tasks.service.js")
